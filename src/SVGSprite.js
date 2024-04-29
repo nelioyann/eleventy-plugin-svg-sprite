@@ -76,7 +76,7 @@ class SVGSprite {
     }
 
     // cache spriteContent into global spriteCache variable
-    spriteCache[this.svgSpriteShortcode].spriteContent = `<div style="width: 0; height: 0; position: absolute; overflow: hidden;">${sprite.contents.toString('utf8')}</div>`;
+    spriteCache[this.svgSpriteShortcode].spriteContent = `<template>${sprite.contents.toString('utf8')}</template>`;
     // fs.utimes('.', new Date(), new Date(), () => { });
   };
 
